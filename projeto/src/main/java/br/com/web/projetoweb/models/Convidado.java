@@ -1,12 +1,17 @@
 package br.com.web.projetoweb.models;
 
 import jakarta.persistence.Entity;
+
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.NotEmpty;
+
+
 
 @Entity
 public class Convidado {
     @Id
+    @NotEmpty
     private String rg;
     private String nomeConvidado;
     @ManyToOne

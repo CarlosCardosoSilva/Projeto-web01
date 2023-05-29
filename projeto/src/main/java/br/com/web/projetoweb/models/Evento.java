@@ -25,7 +25,7 @@ public class Evento implements Serializable{
     @NotEmpty
 	private String horario;
     
-	@OneToMany
+	@OneToMany//Siguinifica um evento para mutios convidados
 	private List<Convidado> convidados;
 	
 	public long getCodigo() {

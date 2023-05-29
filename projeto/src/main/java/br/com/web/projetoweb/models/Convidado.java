@@ -14,7 +14,7 @@ public class Convidado {
     @NotEmpty
     private String rg;
     private String nomeConvidado;
-    @ManyToOne
+    @ManyToOne ///Siguinifica muitos convidados para um evento
     private Evento evento;
     
     public void setEvento(Evento evento) {
